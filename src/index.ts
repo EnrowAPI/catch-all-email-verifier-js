@@ -3,23 +3,21 @@ const BASE_URL = 'https://api.enrow.io';
 export interface VerifyCatchAllParams {
   apiKey: string;
   email: string;
+  custom?: string;
   webhook?: string;
 }
 
 export interface VerifyCatchAllBulkParams {
   apiKey: string;
-  verifications: string[];
+  emails: string[];
+  custom?: string;
   webhook?: string;
 }
 
 export interface VerificationResult {
-  id: string;
   email?: string;
   qualification?: string;
-  isDeliverable?: boolean;
-  checks?: Record<string, unknown>;
-  metadata?: Record<string, unknown>;
-  creditsUsed?: number;
+  custom?: string;
   message?: string;
 }
 
@@ -53,6 +51,7 @@ async function request(apiKey: string, method: string, path: string, body?: unkn
 
 export async function verifyCatchAll(params: VerifyCatchAllParams): Promise<VerificationResult> {
   const body: Record<string, unknown> = { email: params.email };
+  if (params.custom) body.custom = params.custom;
   if (params.webhook) {
     body.settings = { webhook: params.webhook };
   }
@@ -65,8 +64,9 @@ export async function getVerificationResult(apiKey: string, id: string): Promise
 
 export async function verifyCatchAllBulk(params: VerifyCatchAllBulkParams): Promise<BulkVerificationResult> {
   const body: Record<string, unknown> = {
-    verifications: params.verifications,
+    emails: params.emails,
   };
+  if (params.custom) body.custom = params.custom;
   if (params.webhook) {
     body.settings = { webhook: params.webhook };
   }
