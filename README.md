@@ -37,7 +37,6 @@ const result = await getVerificationResult('your_api_key', verification.id);
 
 console.log(result.email);          // tcook@apple.com
 console.log(result.qualification);  // valid
-console.log(result.isDeliverable);  // true
 ```
 
 `verifyCatchAll` returns a verification ID. The verification runs asynchronously -- call `getVerificationResult` to retrieve the result once it's ready. You can also pass a `webhook` URL to get notified automatically.
@@ -46,25 +45,8 @@ console.log(result.isDeliverable);  // true
 
 ```json
 {
-  "id": "ver_abc123",
   "email": "tcook@apple.com",
-  "qualification": "valid",
-  "isDeliverable": true,
-  "checks": {
-    "syntaxValid": true,
-    "mxRecordsFound": true,
-    "smtpConnectable": true,
-    "mailboxExists": true,
-    "isCatchAll": false,
-    "isDisposable": false,
-    "isRoleAccount": false
-  },
-  "metadata": {
-    "domain": "apple.com",
-    "mxProvider": "Google",
-    "verifiedAt": "2024-12-01T12:00:00Z"
-  },
-  "creditsUsed": 0.25
+  "qualification": "valid"
 }
 ```
 
