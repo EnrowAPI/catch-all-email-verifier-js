@@ -33,7 +33,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/enrow/catch-all-email-verifier-js"
+    "url": "https://github.com/EnrowAPI/catch-all-email-verifier-js"
   },
   "homepage": "https://enrow.io",
   "engines": { "node": ">=18" },

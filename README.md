@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/catch-all-email-verifier.svg)](https://www.npmjs.com/package/catch-all-email-verifier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/EnrowAPI/catch-all-email-verifier-js)](https://github.com/EnrowAPI/catch-all-email-verifier-js)
+[![Last commit](https://img.shields.io/github/last-commit/EnrowAPI/catch-all-email-verifier-js)](https://github.com/EnrowAPI/catch-all-email-verifier-js/commits)
 
 Verify emails on catch-all domains with deterministic verification. Most verifiers mark catch-all emails as "risky" or "unknown" -- this one tells you if the specific mailbox actually exists.
 
@@ -111,7 +113,7 @@ Paid plans start at **$17/mo** up to **$497/mo**. See [pricing](https://enrow.io
 ## Documentation
 
 - [Enrow API documentation](https://docs.enrow.io)
-- [Full Enrow SDK](https://github.com/enrow/enrow-js) -- includes email finder, phone finder, reverse email lookup, and more
+- [Full Enrow SDK](https://github.com/EnrowAPI/enrow-js) -- includes email finder, phone finder, reverse email lookup, and more
 
 ## License
 
