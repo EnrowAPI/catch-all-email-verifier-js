@@ -95,7 +95,7 @@ Paid plans start at **$17/mo** up to **$497/mo**. See [pricing](https://enrow.io
 ## Documentation
 
 - [Enrow API documentation](https://docs.enrow.io)
-- [Full Enrow SDK](https://github.com/EnrowAPI/enrow-js) -- includes email finder, phone finder, reverse email lookup, and more
+- [Full Enrow SDK](https://github.com/EnrowAPI/enrow-js) -- includes email finder, phone finderand more
 
 ## License
 
